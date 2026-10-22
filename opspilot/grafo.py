@@ -215,7 +215,8 @@ def investigar(estado: EstadoOps) -> dict:
     """Um passo do ciclo ReAct, agora como NÓ explícito do grafo."""
     modelo = _llm().bind_tools(FERRAMENTAS_LEITURA)
     instrucao = SystemMessage(
-        montar_prompt_sistema() + "\n\nNesta etapa você SÓ investiga (não abra tickets). Quando tiver evidências "
+        montar_prompt_sistema()
+        + "\n\nNesta etapa você SÓ investiga (não abra tickets). Quando tiver evidências "
         "suficientes, escreva o diagnóstico no formato pedido, sem chamar ferramentas."
     )
     resposta = modelo.invoke([instrucao, *estado["messages"]])

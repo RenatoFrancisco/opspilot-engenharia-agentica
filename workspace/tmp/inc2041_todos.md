@@ -1,0 +1,8 @@
+- [ ] Ler o incidente e identificar serviços possivelmente envolvidos
+- [ ] Delegar análise de logs por serviço em paralelo
+- [ ] Consultar métricas dos serviços relevantes e registrar evidências
+- [ ] Pesquisar runbook oficial e validar diagnóstico com triagem FSM
+- [ ] Consolidar achados e escrever o post-mortem em /relatorios/postmortem-INC-2041.md
+- [ ] Autocorrigir o relatório conferindo números contra as notas
+- [ ] Atualizar lição reutilizável em /memoria/AGENTS.md, se houver
+- [ ] Abrir ticket do incidente com diagnóstico validado

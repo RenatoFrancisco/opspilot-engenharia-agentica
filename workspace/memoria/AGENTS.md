@@ -25,3 +25,4 @@
 
 ## Lições aprendidas (o agente acrescenta abaixo, 1 linha por lição)
 - Fila de notificações crescendo costuma ser efeito colateral de retries da API produtora.
+- Redução inadvertida de pool de conexões em banco crítico pode se manifestar como checkout lento e 503, mesmo com CPU baixa na API.
